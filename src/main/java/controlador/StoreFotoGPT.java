@@ -20,6 +20,7 @@ public class StoreFotoGPT extends HttpServlet {
     
     // Ruta a la carpeta donde se guardarán las fotos
     private static final String UPLOAD_DIR = "fotos";
+    private static final String APLICATIN_LOCAL_PATH = "C:\\Users\\plaiaundi\\eclipse-workspace-21\\SubirFotos\\src\\main\\webapp";
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Obtener la parte del formulario con el archivo
@@ -31,8 +32,9 @@ public class StoreFotoGPT extends HttpServlet {
             String fileName = getFileName(filePart);
             
             // Obtener la ruta completa de la carpeta de fotos
-            String applicationPath = request.getServletContext().getRealPath("");
-            String uploadFilePath = applicationPath + File.separator + UPLOAD_DIR;
+//            String applicationPath = request.getServletContext().getRealPath("");
+//            String uploadFilePath = applicationPath + File.separator + UPLOAD_DIR;
+            String uploadFilePath = APLICATIN_LOCAL_PATH + File.separator + UPLOAD_DIR;
             
             // Crear la carpeta de destino si no existe
             File uploadDir = new File(uploadFilePath);
