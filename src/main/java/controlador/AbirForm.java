@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class AbirForm
  */
-@WebServlet("/AbirForm")
+@WebServlet("/")
 public class AbirForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

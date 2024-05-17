@@ -6,20 +6,4 @@
          version="3.1">
 
 
- 
-    <!-- Redirección de la raíz (/) al servlet AbrirForm -->
-    <servlet>
-        <servlet-name>DefaultServlet</servlet-name>
-        <servlet-class>javax.servlet.http.HttpServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>DefaultServlet</servlet-name>
-        <url-pattern>/</url-pattern>
-    </servlet-mapping>
-
-    <error-page>
-        <location>/AbirForm</location>
-    </error-page>
-
 </web-app>
